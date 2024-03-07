@@ -1,0 +1,27 @@
+Active Directory Setup and Configuration 
+
+The project involved the creation of a Domain controller server and adding systems into created domain on a virtual network.  To complete this project, the following are needed:
+
+1. Virtual Box
+2. Windows 10 iso
+3. Server 2019 iso.
+
+STEPS/Main HIGHLIGHTS
+1. Setup Windows Server 2019 virtual machine.
+2. Identify internal and internet NIC. Setup static IP and DNS for internal NIC
+3. Rename PC and restart system afresh
+4. Add Active Directory Domain Services to Server.
+5. Create Domain
+	@ Create new forest
+	@Create OU and a new admin user account
+	@ Add new usser to domain admin
+	@ Restart and re-login as new admin user
+6. Add routing and Remote Access service to server
+7. Install DHCP server and authorise
+	@Create scope for DHCP server
+	@Setup leasing rules and IP range
+	@Exclude specific IP address if necessary
+8. Create and add 1000 users with PowerShell script
+	@ Set-ExecutionPolict Unrestricted to all
+	@ Go to directory of saved names and PS script to create new users
+9. Setup each user on Windows 10 client
